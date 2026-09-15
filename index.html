@@ -4,62 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ótica Visão de Todos Méier · Alta Precisão Óptica, Estilo &amp; Cuidado Visual</title>
-  <meta name="description" content="A ótica mais completa do Méier. Lentes digitais de alta tecnologia, armações de grifes renomadas, parceria com Cartão de TODOS e exame de vista computadorizado na Rua Dias da Cruz, 499.">
+  <meta name="description" content="A ótica mais completa do Méier. Lentes digitais de alta precisão, armações modernas, convênio Cartão de TODOS e exame computadorizado na Rua Dias da Cruz, 499.">
   <meta property="og:title" content="Ótica Visão de Todos Méier · Enxergue o Seu Melhor com Máxima Nitidez">
-  <meta property="og:description" content="Armações modernas, lentes antirreflexo com proteção luz azul e preços que cabem no seu bolso no coração do Méier.">
+  <meta property="og:description" content="Armações modernas, lentes antirreflexo com proteção luz azul e preços acessíveis no coração do Méier.">
   <meta property="og:image" content="https://visaodetodos.com.br/wp-content/uploads/2024/03/cropped-favicon-192x192.png">
   <link rel="icon" href="https://visaodetodos.com.br/wp-content/uploads/2024/03/cropped-favicon-32x32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="https://visaodetodos.com.br/wp-content/uploads/2024/03/cropped-favicon-180x180.png">
 
-  <!-- Fontes Google: Syne (Identidade marcante) + Plus Jakarta Sans (Clareza e precisão) -->
+  <!-- Google Fonts: Plus Jakarta Sans (Alta legibilidade, moderna, límpida) + Outfit (Títulos sofisticados) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --font-heading: 'Syne', sans-serif;
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
-      /* Cores de Alto Contraste - Paleta Óptica Noturna */
-      --bg-deep: #070D17;
-      --bg-card: #0E1726;
-      --bg-card-hover: #152238;
-      --bg-surface: #111D30;
-      
-      --accent-cyan: #00D2D3;
-      --accent-cyan-glow: rgba(0, 210, 211, 0.28);
-      --accent-blue-light: #38BDF8;
-      
+      /* Paleta "Visão Clara" - Luminosa, Cristalina & Alto Contraste */
+      --bg-main: #F8FAFC;
+      --bg-white: #FFFFFF;
+      --bg-subtle: #F1F5F9;
+      --bg-optic-soft: #F0F9FF;
+      --bg-optic-border: #BAE6FD;
+
+      --text-heading: #0F172A;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --text-light: #94A3B8;
+
       --brand-red: #E0352B;
-      --brand-red-hover: #C9241B;
-      --brand-red-glow: rgba(224, 53, 43, 0.35);
+      --brand-red-hover: #C5251C;
+      --brand-red-soft: #FEF2F2;
 
-      --brand-green: #10B981;
-      --brand-green-glow: rgba(16, 185, 129, 0.25);
+      --accent-blue: #0284C7;
+      --accent-cyan: #0EA5E9;
+      --accent-soft: #E0F2FE;
 
-      --gold-star: #FBBF24;
+      --brand-green: #059669;
+      --brand-green-soft: #ECFDF5;
 
-      --text-white: #FFFFFF;
-      --text-main: #F1F5F9;
-      --text-muted: #94A3B8;
-      --text-dim: #64748B;
+      --gold-star: #F59E0B;
 
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-focus: rgba(0, 210, 211, 0.45);
+      --border-subtle: #E2E8F0;
+      --border-card: rgba(226, 232, 240, 0.9);
 
-      --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.35);
-      --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.45);
-      --shadow-glow: 0 0 35px var(--accent-cyan-glow);
-      --shadow-red: 0 0 30px var(--brand-red-glow);
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 10px 25px -3px rgba(15, 23, 42, 0.07), 0 4px 6px -2px rgba(15, 23, 42, 0.03);
+      --shadow-lg: 0 20px 40px -6px rgba(15, 23, 42, 0.09), 0 0 0 1px rgba(226, 232, 240, 0.6);
+      --shadow-glass: 0 12px 36px rgba(2, 132, 199, 0.08);
 
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 20px;
-      --radius-xl: 28px;
+      --radius-xl: 26px;
       --radius-pill: 9999px;
 
-      --container: 1200px;
+      --container: 1180px;
     }
 
     /* Reset & Base */
@@ -72,16 +73,16 @@
     html {
       scroll-behavior: smooth;
       font-size: 16px;
-      background-color: var(--bg-deep);
-      color: var(--text-main);
+      background-color: var(--bg-main);
+      color: var(--text-body);
       overflow-x: hidden;
     }
 
     body {
       font-family: var(--font-body);
       line-height: 1.6;
-      background: radial-gradient(circle at 50% 0%, #13223A 0%, #070D17 65%, #05080E 100%);
-      background-attachment: fixed;
+      background-color: var(--bg-main);
+      color: var(--text-body);
       min-height: 100vh;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
@@ -96,7 +97,7 @@
     a {
       text-decoration: none;
       color: inherit;
-      transition: all 0.25s ease;
+      transition: all 0.2s ease;
     }
 
     button {
@@ -104,7 +105,7 @@
       cursor: pointer;
       border: none;
       outline: none;
-      transition: all 0.25s ease;
+      transition: all 0.2s ease;
     }
 
     .container {
@@ -113,74 +114,71 @@
       padding: 0 1.5rem;
     }
 
-    /* Utilitários Visuais */
+    /* Badges & Utilitários Visuais */
     .badge-optic {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.4rem 0.95rem;
+      gap: 0.45rem;
+      padding: 0.35rem 0.85rem;
       border-radius: var(--radius-pill);
-      background: rgba(0, 210, 211, 0.1);
-      border: 1px solid rgba(0, 210, 211, 0.3);
-      color: var(--accent-cyan);
-      font-size: 0.82rem;
+      background: var(--bg-optic-soft);
+      border: 1px solid var(--bg-optic-border);
+      color: var(--accent-blue);
+      font-size: 0.8rem;
       font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      letter-spacing: 0.02em;
     }
 
     .badge-cartao {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
-      padding: 0.35rem 0.9rem;
+      gap: 0.4rem;
+      padding: 0.35rem 0.85rem;
       border-radius: var(--radius-pill);
-      background: rgba(16, 185, 129, 0.12);
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      color: #34D399;
+      background: var(--brand-green-soft);
+      border: 1px solid #A7F3D0;
+      color: var(--brand-green);
       font-size: 0.8rem;
       font-weight: 700;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
     }
 
     .section-header {
       text-align: center;
-      max-width: 760px;
-      margin: 0 auto 3.5rem;
+      max-width: 720px;
+      margin: 0 auto 3.25rem;
     }
 
     .section-header h2 {
       font-family: var(--font-heading);
-      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-size: clamp(1.9rem, 3.5vw, 2.5rem);
       font-weight: 700;
-      color: var(--text-white);
-      line-height: 1.2;
-      margin-top: 0.75rem;
-      margin-bottom: 1rem;
+      color: var(--text-heading);
+      line-height: 1.25;
+      margin-top: 0.65rem;
+      margin-bottom: 0.85rem;
       letter-spacing: -0.02em;
     }
 
     .section-header h2 .highlight {
-      background: linear-gradient(135deg, #00D2D3 0%, #38BDF8 50%, #FFFFFF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--accent-blue);
+      position: relative;
     }
 
     .section-header p {
       color: var(--text-muted);
-      font-size: 1.08rem;
-      line-height: 1.65;
+      font-size: 1.05rem;
+      line-height: 1.6;
     }
 
     /* ============================================================
        TOPBAR COM AVISO DE ATENDIMENTO
        ============================================================ */
     .topbar {
-      background: #050A12;
-      border-bottom: 1px solid var(--border-subtle);
-      font-size: 0.84rem;
+      background: #0F172A;
+      color: #E2E8F0;
+      font-size: 0.82rem;
       padding: 0.5rem 0;
-      color: var(--text-muted);
     }
 
     .topbar-content {
@@ -194,7 +192,7 @@
     .topbar-left {
       display: flex;
       align-items: center;
-      gap: 1.25rem;
+      gap: 1rem;
     }
 
     .topbar-badge {
@@ -211,47 +209,48 @@
       height: 7px;
       border-radius: 50%;
       background: #10B981;
-      box-shadow: 0 0 8px #10B981;
+      box-shadow: 0 0 6px #10B981;
       display: inline-block;
     }
 
     .topbar-right {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     .topbar-link {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      color: var(--text-muted);
+      gap: 0.35rem;
+      color: #E2E8F0;
       transition: color 0.2s;
     }
 
     .topbar-link:hover {
-      color: var(--accent-cyan);
+      color: #38BDF8;
     }
 
     /* ============================================================
-       HEADER PRINCIPAL FLUTUANTE
+       HEADER PRINCIPAL LIMPO & OBJETIVO
        ============================================================ */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(7, 13, 23, 0.88);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+      transition: all 0.25s ease;
     }
 
     .nav-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.9rem 1.5rem;
+      padding: 0.75rem 1.5rem;
       max-width: var(--container);
       margin: 0 auto;
     }
@@ -259,51 +258,56 @@
     .brand-logo-wrap {
       display: flex;
       align-items: center;
-      gap: 0.85rem;
+      gap: 0.75rem;
+      flex-shrink: 0;
     }
 
     .brand-logo-img {
-      height: 44px;
+      height: 38px;
       width: auto;
-      filter: drop-shadow(0 2px 8px rgba(0, 210, 211, 0.15));
     }
 
     .brand-city-tag {
       display: flex;
       flex-direction: column;
-      border-left: 1px solid rgba(255, 255, 255, 0.15);
-      padding-left: 0.75rem;
+      border-left: 1px solid var(--border-subtle);
+      padding-left: 0.65rem;
     }
 
     .brand-city-tag .branch {
-      font-size: 0.95rem;
+      font-size: 0.88rem;
       font-weight: 800;
-      color: var(--text-white);
-      letter-spacing: 0.05em;
+      color: var(--text-heading);
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       line-height: 1.1;
     }
 
     .brand-city-tag .subtitle {
-      font-size: 0.72rem;
-      color: var(--accent-cyan);
+      font-size: 0.7rem;
+      color: var(--accent-blue);
       font-weight: 600;
-      letter-spacing: 0.02em;
     }
 
+    /* Navegação com títulos concisos */
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.75rem;
+      gap: 1.4rem;
       list-style: none;
     }
 
     .nav-links a {
-      color: var(--text-main);
-      font-size: 0.93rem;
+      color: var(--text-body);
+      font-size: 0.9rem;
       font-weight: 600;
       position: relative;
       padding: 0.35rem 0;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-blue);
     }
 
     .nav-links a::after {
@@ -313,12 +317,8 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue-light));
-      transition: width 0.25s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--text-white);
+      background: var(--accent-blue);
+      transition: width 0.2s ease;
     }
 
     .nav-links a:hover::after {
@@ -328,164 +328,155 @@
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.85rem;
+      flex-shrink: 0;
     }
 
     .btn-header-cta {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      background: linear-gradient(135deg, var(--brand-red) 0%, #B91C1C 100%);
-      color: var(--text-white);
-      padding: 0.65rem 1.35rem;
+      gap: 0.45rem;
+      background: var(--brand-red);
+      color: #FFFFFF;
+      padding: 0.55rem 1.15rem;
       border-radius: var(--radius-pill);
-      font-size: 0.9rem;
+      font-size: 0.86rem;
       font-weight: 700;
-      box-shadow: 0 4px 18px var(--brand-red-glow);
-      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(224, 53, 43, 0.25);
+      white-space: nowrap;
+      transition: all 0.2s ease;
     }
 
     .btn-header-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(224, 53, 43, 0.5);
+      background: var(--brand-red-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(224, 53, 43, 0.35);
     }
 
     .mobile-menu-toggle {
       display: none;
       background: transparent;
       border: 1px solid var(--border-subtle);
-      color: var(--text-white);
-      padding: 0.5rem;
+      color: var(--text-heading);
+      padding: 0.45rem;
       border-radius: var(--radius-sm);
     }
 
     /* ============================================================
-       HERO SECTION DE ALTO CONTRASTE E ILUMINAÇÃO ÓPTICA
+       HERO SECTION "VISÃO CLARA & LUMINOSA"
        ============================================================ */
     .hero-section {
       position: relative;
       padding: 4.5rem 0 5.5rem;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0F9FF 50%, #F8FAFC 100%);
+      border-bottom: 1px solid var(--border-subtle);
       overflow: hidden;
     }
 
-    .hero-glow-cyan {
+    .hero-glow-soft {
       position: absolute;
-      top: -10%;
-      left: 5%;
-      width: 480px;
-      height: 480px;
-      background: radial-gradient(circle, rgba(0, 210, 211, 0.18) 0%, transparent 70%);
+      top: -15%;
+      right: 10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%);
       pointer-events: none;
-      filter: blur(70px);
-      z-index: 0;
-    }
-
-    .hero-glow-red {
-      position: absolute;
-      top: 20%;
-      right: 5%;
-      width: 450px;
-      height: 450px;
-      background: radial-gradient(circle, rgba(224, 53, 43, 0.16) 0%, transparent 70%);
-      pointer-events: none;
-      filter: blur(80px);
-      z-index: 0;
+      filter: blur(60px);
     }
 
     .hero-grid {
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: 1.15fr 0.95fr;
+      grid-template-columns: 1.1fr 0.95fr;
       align-items: center;
       gap: 3.5rem;
     }
 
     .hero-content {
-      max-width: 630px;
+      max-width: 600px;
     }
 
     .hero-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-title {
-      font-family: var(--font-heading);
-      font-size: clamp(2.4rem, 4.8vw, 3.65rem);
-      font-weight: 800;
-      line-height: 1.12;
-      color: var(--text-white);
-      letter-spacing: -0.03em;
+      gap: 0.65rem;
       margin-bottom: 1.35rem;
     }
 
-    .hero-title .text-gradient {
-      background: linear-gradient(135deg, #00D2D3 0%, #38BDF8 60%, #FFFFFF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    /* Título da Hero ajustado, harmônico e límpido */
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.1rem, 3.6vw, 3rem);
+      font-weight: 800;
+      line-height: 1.18;
+      color: var(--text-heading);
+      letter-spacing: -0.025em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title .text-highlight {
+      color: var(--accent-blue);
       display: inline-block;
     }
 
     .hero-desc {
-      font-size: 1.15rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 2.25rem;
+      font-size: 1.1rem;
+      color: var(--text-body);
+      line-height: 1.68;
+      margin-bottom: 2rem;
     }
 
     .hero-cta-group {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 1.15rem;
-      margin-bottom: 2.75rem;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
     }
 
     .btn-primary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.65rem;
-      background: linear-gradient(135deg, var(--brand-red) 0%, #BD1E15 100%);
-      color: var(--text-white);
-      font-size: 1.05rem;
+      gap: 0.6rem;
+      background: var(--brand-red);
+      color: #FFFFFF;
+      font-size: 1rem;
       font-weight: 700;
-      padding: 0.95rem 2rem;
+      padding: 0.9rem 1.85rem;
       border-radius: var(--radius-pill);
-      box-shadow: 0 8px 25px var(--brand-red-glow);
-      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px rgba(224, 53, 43, 0.28);
+      transition: all 0.2s ease;
     }
 
     .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 32px rgba(224, 53, 43, 0.55);
-      background: linear-gradient(135deg, #F04135 0%, #C9241B 100%);
+      background: var(--brand-red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(224, 53, 43, 0.4);
     }
 
     .btn-secondary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.65rem;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: var(--text-white);
-      font-size: 1.02rem;
+      gap: 0.6rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-heading);
+      font-size: 0.98rem;
       font-weight: 600;
-      padding: 0.95rem 1.85rem;
+      padding: 0.9rem 1.75rem;
       border-radius: var(--radius-pill);
-      backdrop-filter: blur(10px);
-      transition: all 0.25s ease;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
     }
 
     .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: var(--accent-cyan);
-      color: var(--accent-cyan);
-      transform: translateY(-3px);
+      border-color: var(--accent-blue);
+      color: var(--accent-blue);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
     }
 
     .hero-features-bar {
@@ -493,64 +484,53 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
       padding-top: 1.75rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 1px solid var(--border-subtle);
     }
 
     .hero-feat-item {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.65rem;
     }
 
     .feat-icon-box {
-      width: 40px;
-      height: 40px;
-      border-radius: var(--radius-sm);
-      background: rgba(0, 210, 211, 0.1);
-      border: 1px solid rgba(0, 210, 211, 0.25);
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--bg-optic-soft);
+      border: 1px solid var(--bg-optic-border);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--accent-cyan);
+      color: var(--accent-blue);
       flex-shrink: 0;
     }
 
     .feat-text-box strong {
       display: block;
-      color: var(--text-white);
-      font-size: 0.88rem;
+      color: var(--text-heading);
+      font-size: 0.86rem;
       font-weight: 700;
       line-height: 1.2;
     }
 
     .feat-text-box span {
       color: var(--text-muted);
-      font-size: 0.76rem;
+      font-size: 0.75rem;
     }
 
-    /* Hero Visual Card */
+    /* Hero Visual Card com Estética Clean & Vidro Cristal */
     .hero-visual-card {
       position: relative;
     }
 
     .hero-main-glass-frame {
       position: relative;
-      background: linear-gradient(145deg, rgba(21, 34, 56, 0.6) 0%, rgba(11, 19, 32, 0.85) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #FFFFFF;
+      border: 1px solid var(--border-card);
       border-radius: var(--radius-xl);
-      padding: 1.5rem;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 210, 211, 0.12);
-      overflow: hidden;
-    }
-
-    .hero-main-glass-frame::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-lg), 0 0 25px rgba(2, 132, 199, 0.06);
     }
 
     .hero-main-photo-wrap {
@@ -558,52 +538,53 @@
       border-radius: var(--radius-lg);
       overflow: hidden;
       aspect-ratio: 4/3;
-      background: #0B1320;
+      background: #F1F5F9;
     }
 
     .hero-main-photo-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.6s ease;
+      transition: transform 0.5s ease;
     }
 
     .hero-main-glass-frame:hover .hero-main-photo-wrap img {
-      transform: scale(1.04);
+      transform: scale(1.03);
     }
 
-    /* Badges flutuantes no Hero */
+    /* Badges flutuantes no Hero com Ícones Contextuais Corretos */
     .float-badge-card {
       position: absolute;
-      background: rgba(14, 23, 38, 0.92);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      padding: 0.85rem 1.15rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.15rem;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-md);
       display: flex;
       align-items: center;
-      gap: 0.85rem;
+      gap: 0.75rem;
       z-index: 2;
       animation: floatSlow 4s ease-in-out infinite alternate;
     }
 
     .float-badge-card.top-right {
-      top: -20px;
-      right: -20px;
-      border-color: rgba(0, 210, 211, 0.35);
+      top: -15px;
+      right: -15px;
+      border-color: #BAE6FD;
     }
 
     .float-badge-card.bottom-left {
-      bottom: -20px;
-      left: -20px;
-      border-color: rgba(16, 185, 129, 0.35);
+      bottom: -15px;
+      left: -15px;
+      border-color: #A7F3D0;
       animation-delay: -2s;
     }
 
     @keyframes floatSlow {
       0% { transform: translateY(0px); }
-      100% { transform: translateY(-8px); }
+      100% { transform: translateY(-6px); }
     }
 
     .float-icon {
@@ -616,47 +597,114 @@
       flex-shrink: 0;
     }
 
-    .float-icon.cyan {
-      background: rgba(0, 210, 211, 0.15);
-      color: var(--accent-cyan);
+    .float-icon.blue {
+      background: var(--bg-optic-soft);
+      color: var(--accent-blue);
+      border: 1px solid var(--bg-optic-border);
     }
 
     .float-icon.green {
-      background: rgba(16, 185, 129, 0.15);
-      color: #34D399;
+      background: var(--brand-green-soft);
+      color: var(--brand-green);
+      border: 1px solid #A7F3D0;
     }
 
     .float-text strong {
       display: block;
-      color: var(--text-white);
-      font-size: 0.88rem;
+      color: var(--text-heading);
+      font-size: 0.85rem;
       font-weight: 700;
+      line-height: 1.2;
     }
 
     .float-text span {
       color: var(--text-muted);
-      font-size: 0.74rem;
+      font-size: 0.72rem;
+    }
+
+    /* ============================================================
+       VITRINE DE MARCAS PARCEIRAS (MARQUEE CLEAN)
+       ============================================================ */
+    .brands-section {
+      padding: 2.75rem 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-subtle);
+      overflow: hidden;
+    }
+
+    .brands-title {
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 4.5rem;
+      width: max-content;
+      animation: marqueeScroll 26s linear infinite;
+    }
+
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    .marquee-brand-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0.65;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      filter: grayscale(100%);
+    }
+
+    .marquee-brand-item:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    .marquee-brand-item img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .marquee-brand-name {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: 0.03em;
+    }
+
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     /* ============================================================
        SIMULADOR INTERATIVO DE LENTES (Antes vs Depois)
        ============================================================ */
     .simulator-section {
-      padding: 6rem 0;
+      padding: 5.5rem 0;
       position: relative;
-      background: linear-gradient(180deg, rgba(14, 23, 38, 0.5) 0%, rgba(7, 13, 23, 0.95) 100%);
-      border-top: 1px solid var(--border-subtle);
-      border-bottom: 1px solid var(--border-subtle);
+      background: #F8FAFC;
     }
 
     .simulator-container {
-      max-width: 1080px;
+      max-width: 1040px;
       margin: 0 auto;
-      background: var(--bg-card);
-      border: 1px solid rgba(0, 210, 211, 0.25);
+      background: #FFFFFF;
+      border: 1px solid var(--border-card);
       border-radius: var(--radius-xl);
-      padding: 2.5rem;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 35px rgba(0, 210, 211, 0.08);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-lg);
       position: relative;
       overflow: hidden;
     }
@@ -666,63 +714,63 @@
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.25rem;
       border-bottom: 1px solid var(--border-subtle);
     }
 
     .sim-info h3 {
       font-family: var(--font-heading);
-      font-size: 1.75rem;
-      color: var(--text-white);
-      margin-top: 0.4rem;
+      font-size: 1.6rem;
+      color: var(--text-heading);
+      margin-top: 0.35rem;
     }
 
     .sim-info p {
       color: var(--text-muted);
-      font-size: 0.96rem;
-      margin-top: 0.25rem;
+      font-size: 0.94rem;
+      margin-top: 0.2rem;
     }
 
     .sim-toggle-tabs {
       display: inline-flex;
-      background: #070D17;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-subtle);
       border-radius: var(--radius-pill);
-      padding: 0.3rem;
-      gap: 0.3rem;
+      padding: 0.25rem;
+      gap: 0.25rem;
     }
 
     .sim-btn-mode {
-      padding: 0.6rem 1.25rem;
+      padding: 0.55rem 1.15rem;
       border-radius: var(--radius-pill);
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--text-muted);
       background: transparent;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      transition: all 0.25s ease;
+      gap: 0.45rem;
+      transition: all 0.2s ease;
     }
 
     .sim-btn-mode.active {
-      background: linear-gradient(135deg, var(--accent-cyan) 0%, #0284C7 100%);
-      color: #050A12;
-      box-shadow: 0 4px 15px rgba(0, 210, 211, 0.3);
+      background: #FFFFFF;
+      color: var(--accent-blue);
+      box-shadow: var(--shadow-sm);
     }
 
-    /* Canvas Interativo do Antes / Depois */
+    /* Viewport Interativo do Simulador */
     .lens-viewport {
       position: relative;
       width: 100%;
-      height: 480px;
+      height: 440px;
       border-radius: var(--radius-lg);
       overflow: hidden;
       user-select: none;
-      background: #020617;
-      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+      background: #0F172A;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
     }
 
     .lens-stage-image {
@@ -734,28 +782,28 @@
       object-fit: cover;
     }
 
-    /* Camada Comum (Reflexos e Ofuscamento) */
+    /* Camada Suja / Com Reflexos */
     .lens-layer-dirty {
       position: absolute;
       inset: 0;
       pointer-events: none;
       opacity: 1;
-      transition: opacity 0.4s ease;
-      background: radial-gradient(circle at 75% 35%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.3) 18%, transparent 55%),
-                  radial-gradient(circle at 25% 70%, rgba(147, 197, 253, 0.5) 0%, transparent 40%),
-                  linear-gradient(45deg, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+      transition: opacity 0.35s ease;
+      background: radial-gradient(circle at 75% 35%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.4) 18%, transparent 55%),
+                  radial-gradient(circle at 25% 70%, rgba(147, 197, 253, 0.6) 0%, transparent 40%),
+                  linear-gradient(45deg, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
       mix-blend-mode: screen;
       filter: blur(1.5px);
     }
 
-    /* Camada Digital Antirreflexo + Blue Defense */
+    /* Camada Limpa / Antirreflexo Digital */
     .lens-layer-clean {
       position: absolute;
       inset: 0;
       pointer-events: none;
       opacity: 0;
-      transition: opacity 0.4s ease;
-      box-shadow: inset 0 0 80px rgba(0, 210, 211, 0.15);
+      transition: opacity 0.35s ease;
+      box-shadow: inset 0 0 60px rgba(2, 132, 199, 0.15);
     }
 
     .lens-viewport.mode-clean .lens-layer-dirty {
@@ -772,322 +820,158 @@
 
     .lens-overlay-badge {
       position: absolute;
-      bottom: 24px;
-      left: 24px;
-      background: rgba(11, 19, 32, 0.88);
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      bottom: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
-      padding: 0.9rem 1.35rem;
+      padding: 0.85rem 1.25rem;
       z-index: 10;
-      max-width: 380px;
+      max-width: 360px;
+      box-shadow: var(--shadow-md);
       transition: all 0.3s ease;
     }
 
     .lens-overlay-badge .badge-status {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
-      font-size: 0.78rem;
+      gap: 0.4rem;
+      font-size: 0.74rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.35rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.3rem;
     }
 
     .badge-status.bad {
-      color: #F87171;
+      color: #EF4444;
     }
 
     .badge-status.good {
-      color: var(--accent-cyan);
+      color: var(--accent-blue);
     }
 
     .lens-overlay-badge h4 {
-      color: var(--text-white);
-      font-size: 1.05rem;
+      color: var(--text-heading);
+      font-size: 1rem;
       font-weight: 700;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.2rem;
     }
 
     .lens-overlay-badge p {
-      color: var(--text-muted);
-      font-size: 0.85rem;
+      color: var(--text-body);
+      font-size: 0.82rem;
       line-height: 1.45;
     }
 
     .sim-features-row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+      gap: 1.25rem;
+      margin-top: 1.75rem;
     }
 
     .sim-feat-box {
-      background: #080E18;
+      background: var(--bg-subtle);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
-      padding: 1.25rem;
-      transition: border-color 0.25s;
-    }
-
-    .sim-feat-box:hover {
-      border-color: rgba(0, 210, 211, 0.35);
+      padding: 1.15rem;
     }
 
     .sim-feat-box .icon {
-      color: var(--accent-cyan);
-      margin-bottom: 0.6rem;
+      color: var(--accent-blue);
+      margin-bottom: 0.5rem;
     }
 
     .sim-feat-box h5 {
-      color: var(--text-white);
-      font-size: 0.98rem;
+      color: var(--text-heading);
+      font-size: 0.95rem;
       font-weight: 700;
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.25rem;
     }
 
     .sim-feat-box p {
       color: var(--text-muted);
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       line-height: 1.5;
-    }
-
-    /* ============================================================
-       TECNOLOGIAS DE LENTES (Cards de Alta Densidade de Informação)
-       ============================================================ */
-    .tech-section {
-      padding: 6rem 0;
-      position: relative;
-    }
-
-    .tech-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 1.75rem;
-    }
-
-    .tech-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .tech-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: transparent;
-      transition: background 0.3s ease;
-    }
-
-    .tech-card:hover {
-      transform: translateY(-6px);
-      background: var(--bg-card-hover);
-      border-color: rgba(0, 210, 211, 0.3);
-      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.5), 0 0 25px var(--accent-cyan-glow);
-    }
-
-    .tech-card:hover::before {
-      background: linear-gradient(90deg, var(--accent-cyan), var(--brand-red));
-    }
-
-    .tech-icon-circle {
-      width: 54px;
-      height: 54px;
-      border-radius: var(--radius-md);
-      background: rgba(0, 210, 211, 0.1);
-      border: 1px solid rgba(0, 210, 211, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent-cyan);
-      margin-bottom: 1.4rem;
-    }
-
-    .tech-card h3 {
-      font-family: var(--font-heading);
-      font-size: 1.35rem;
-      color: var(--text-white);
-      margin-bottom: 0.75rem;
-      line-height: 1.25;
-    }
-
-    .tech-card p {
-      color: var(--text-muted);
-      font-size: 0.94rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-    }
-
-    .tech-pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      list-style: none;
-      margin-top: auto;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    .tech-pill-list li {
-      font-size: 0.76rem;
-      font-weight: 600;
-      color: var(--accent-blue-light);
-      background: rgba(56, 189, 248, 0.08);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      padding: 0.25rem 0.65rem;
-      border-radius: var(--radius-pill);
-    }
-
-    /* ============================================================
-       VITRINE DE MARCAS PARCEIRAS (Marquee Contínuo)
-       ============================================================ */
-    .brands-section {
-      padding: 3.5rem 0;
-      background: #050A12;
-      border-top: 1px solid var(--border-subtle);
-      border-bottom: 1px solid var(--border-subtle);
-      overflow: hidden;
-    }
-
-    .brands-title {
-      text-align: center;
-      font-size: 0.88rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-dim);
-      margin-bottom: 1.75rem;
-    }
-
-    .marquee-track {
-      display: flex;
-      align-items: center;
-      gap: 4rem;
-      width: max-content;
-      animation: marqueeScroll 28s linear infinite;
-    }
-
-    .marquee-track:hover {
-      animation-play-state: paused;
-    }
-
-    .marquee-brand-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      opacity: 0.7;
-      transition: opacity 0.25s ease, filter 0.25s ease;
-      filter: grayscale(100%) brightness(1.6);
-    }
-
-    .marquee-brand-item:hover {
-      opacity: 1;
-      filter: grayscale(0%) brightness(1);
-    }
-
-    .marquee-brand-item img {
-      height: 38px;
-      width: auto;
-      object-fit: contain;
-    }
-
-    .marquee-brand-name {
-      font-family: var(--font-heading);
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--text-white);
-      letter-spacing: 0.04em;
-    }
-
-    @keyframes marqueeScroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
     }
 
     /* ============================================================
        CATÁLOGO & COLEÇÕES DE ARMAÇÕES COM FILTRO
        ============================================================ */
     .catalog-section {
-      padding: 6rem 0;
-      position: relative;
+      padding: 5.5rem 0;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
     }
 
     .catalog-filter-bar {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 0.65rem;
-      margin-bottom: 3.25rem;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
     }
 
     .catalog-tab-btn {
-      padding: 0.65rem 1.45rem;
+      padding: 0.55rem 1.25rem;
       border-radius: var(--radius-pill);
-      background: var(--bg-card);
+      background: var(--bg-subtle);
       border: 1px solid var(--border-subtle);
-      color: var(--text-muted);
-      font-size: 0.92rem;
+      color: var(--text-body);
+      font-size: 0.88rem;
       font-weight: 600;
-      transition: all 0.25s ease;
+      transition: all 0.2s ease;
     }
 
     .catalog-tab-btn:hover {
-      color: var(--text-white);
-      border-color: rgba(255, 255, 255, 0.25);
+      color: var(--text-heading);
+      border-color: #CBD5E1;
     }
 
     .catalog-tab-btn.active {
-      background: linear-gradient(135deg, var(--accent-cyan) 0%, #0284C7 100%);
-      color: #050A12;
-      font-weight: 800;
-      border-color: transparent;
-      box-shadow: 0 4px 18px var(--accent-cyan-glow);
+      background: var(--accent-blue);
+      color: #FFFFFF;
+      font-weight: 700;
+      border-color: var(--accent-blue);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
     }
 
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1.75rem;
     }
 
     .product-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
+      background: #FFFFFF;
+      border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: all 0.3s ease;
-      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
     }
 
     .product-card:hover {
-      transform: translateY(-8px);
-      border-color: rgba(0, 210, 211, 0.4);
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 210, 211, 0.15);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--bg-optic-border);
     }
 
     .product-image-box {
       position: relative;
       aspect-ratio: 16/11;
-      background: radial-gradient(circle at center, #1E2E47 0%, #0D1624 100%);
+      background: #F1F5F9;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1.5rem;
+      padding: 1.25rem;
     }
 
     .product-image-box img {
@@ -1095,58 +979,58 @@
       height: 100%;
       object-fit: cover;
       border-radius: var(--radius-sm);
-      transition: transform 0.5s ease;
+      transition: transform 0.4s ease;
     }
 
     .product-card:hover .product-image-box img {
-      transform: scale(1.08);
+      transform: scale(1.05);
     }
 
     .product-tag {
       position: absolute;
-      top: 14px;
-      left: 14px;
-      background: rgba(11, 19, 32, 0.85);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: var(--accent-cyan);
-      font-size: 0.72rem;
+      top: 12px;
+      left: 12px;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid var(--border-subtle);
+      color: var(--accent-blue);
+      font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      padding: 0.25rem 0.65rem;
+      padding: 0.25rem 0.6rem;
       border-radius: var(--radius-pill);
+      box-shadow: var(--shadow-sm);
     }
 
     .product-content {
-      padding: 1.6rem;
+      padding: 1.4rem;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
     }
 
     .product-brand {
-      color: var(--text-dim);
-      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.35rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
     }
 
     .product-title {
-      color: var(--text-white);
-      font-size: 1.15rem;
+      color: var(--text-heading);
+      font-size: 1.08rem;
       font-weight: 700;
       line-height: 1.3;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
     }
 
     .product-desc {
       color: var(--text-muted);
-      font-size: 0.86rem;
+      font-size: 0.84rem;
       line-height: 1.5;
-      margin-bottom: 1.35rem;
+      margin-bottom: 1.25rem;
     }
 
     .product-footer {
@@ -1154,48 +1038,126 @@
       align-items: center;
       justify-content: space-between;
       margin-top: auto;
-      padding-top: 1.25rem;
+      padding-top: 1.15rem;
       border-top: 1px solid var(--border-subtle);
     }
 
     .price-box .from {
       display: block;
-      font-size: 0.72rem;
-      color: var(--text-dim);
+      font-size: 0.7rem;
+      color: var(--text-muted);
       text-transform: uppercase;
-      letter-spacing: 0.03em;
     }
 
     .price-box .val {
-      font-size: 1.25rem;
+      font-size: 1.18rem;
       font-weight: 800;
-      color: var(--text-white);
+      color: var(--text-heading);
     }
 
     .price-box .parcel {
-      font-size: 0.72rem;
-      color: #34D399;
+      font-size: 0.7rem;
+      color: var(--brand-green);
       font-weight: 600;
     }
 
     .btn-product-wpp {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      background: rgba(0, 210, 211, 0.1);
-      border: 1px solid rgba(0, 210, 211, 0.3);
-      color: var(--accent-cyan);
-      padding: 0.55rem 1.1rem;
+      gap: 0.35rem;
+      background: var(--bg-optic-soft);
+      border: 1px solid var(--bg-optic-border);
+      color: var(--accent-blue);
+      padding: 0.45rem 0.95rem;
       border-radius: var(--radius-pill);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
       transition: all 0.2s ease;
     }
 
     .btn-product-wpp:hover {
-      background: var(--accent-cyan);
-      color: #050A12;
-      box-shadow: 0 4px 14px var(--accent-cyan-glow);
+      background: var(--accent-blue);
+      color: #FFFFFF;
+    }
+
+    /* ============================================================
+       TRATAMENTOS DE LENTES (Cards Clean & Nítidos)
+       ============================================================ */
+    .tech-section {
+      padding: 5.5rem 0;
+      background: #F8FAFC;
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tech-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 1.85rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+    }
+
+    .tech-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--bg-optic-border);
+    }
+
+    .tech-icon-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--bg-optic-soft);
+      border: 1px solid var(--bg-optic-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-blue);
+      margin-bottom: 1.25rem;
+    }
+
+    .tech-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--text-heading);
+      margin-bottom: 0.6rem;
+      line-height: 1.25;
+    }
+
+    .tech-card p {
+      color: var(--text-body);
+      font-size: 0.9rem;
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+    }
+
+    .tech-pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      list-style: none;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .tech-pill-list li {
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: var(--accent-blue);
+      background: var(--bg-optic-soft);
+      border: 1px solid var(--bg-optic-border);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-pill);
     }
 
     /* ============================================================
@@ -1203,126 +1165,117 @@
        ============================================================ */
     .cartao-todos-section {
       padding: 5rem 0;
-      position: relative;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
     }
 
     .cartao-banner {
-      background: radial-gradient(circle at 10% 50%, #0F2D28 0%, #0E1726 60%, #09101C 100%);
-      border: 1px solid rgba(16, 185, 129, 0.35);
+      background: linear-gradient(135deg, #ECFDF5 0%, #FFFFFF 60%, #F0FDF4 100%);
+      border: 1px solid #A7F3D0;
       border-radius: var(--radius-xl);
-      padding: 3.5rem;
+      padding: 3.25rem;
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       align-items: center;
       gap: 3rem;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 35px rgba(16, 185, 129, 0.15);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cartao-banner::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -20%;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
-      pointer-events: none;
+      box-shadow: var(--shadow-md);
     }
 
     .cartao-content h3 {
       font-family: var(--font-heading);
-      font-size: clamp(1.8rem, 3.5vw, 2.35rem);
-      color: var(--text-white);
-      line-height: 1.2;
-      margin-top: 0.85rem;
-      margin-bottom: 1rem;
+      font-size: clamp(1.75rem, 3.2vw, 2.25rem);
+      color: var(--text-heading);
+      line-height: 1.22;
+      margin-top: 0.75rem;
+      margin-bottom: 0.85rem;
     }
 
     .cartao-content h3 span {
-      color: #34D399;
+      color: var(--brand-green);
     }
 
     .cartao-content p {
-      color: #CBD5E1;
-      font-size: 1.05rem;
+      color: var(--text-body);
+      font-size: 1rem;
       line-height: 1.65;
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
     }
 
     .cartao-benefits-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      gap: 0.85rem;
       list-style: none;
-      margin-bottom: 2.25rem;
+      margin-bottom: 2rem;
     }
 
     .cartao-benefit-item {
       display: flex;
       align-items: center;
-      gap: 0.65rem;
-      color: var(--text-white);
-      font-size: 0.95rem;
+      gap: 0.55rem;
+      color: var(--text-heading);
+      font-size: 0.92rem;
       font-weight: 600;
     }
 
     .cartao-benefit-item svg {
-      color: #34D399;
+      color: var(--brand-green);
       flex-shrink: 0;
     }
 
     .btn-cartao {
       display: inline-flex;
       align-items: center;
-      gap: 0.65rem;
-      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-      color: var(--text-white);
-      font-size: 1.02rem;
+      gap: 0.55rem;
+      background: var(--brand-green);
+      color: #FFFFFF;
+      font-size: 0.98rem;
       font-weight: 700;
-      padding: 0.9rem 2.1rem;
+      padding: 0.85rem 1.95rem;
       border-radius: var(--radius-pill);
-      box-shadow: 0 8px 24px var(--brand-green-glow);
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25);
+      transition: all 0.2s ease;
     }
 
     .btn-cartao:hover {
+      background: #047857;
       transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(16, 185, 129, 0.45);
+      box-shadow: 0 8px 20px rgba(5, 150, 105, 0.35);
     }
 
     .cartao-card-mockup {
-      background: linear-gradient(135deg, #163B34 0%, #0A1C18 100%);
-      border: 1px solid rgba(52, 211, 153, 0.4);
+      background: linear-gradient(135deg, #064E3B 0%, #047857 100%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: var(--radius-lg);
-      padding: 2.25rem;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-      position: relative;
+      padding: 2rem;
+      box-shadow: 0 15px 35px rgba(5, 150, 105, 0.2);
+      color: #FFFFFF;
     }
 
     .card-mockup-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.25rem;
     }
 
     .card-mockup-header .chip {
-      width: 44px;
-      height: 32px;
+      width: 42px;
+      height: 30px;
       background: linear-gradient(135deg, #FCD34D 0%, #D97706 100%);
-      border-radius: 6px;
+      border-radius: 5px;
     }
 
     .card-mockup-body {
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
     }
 
     .card-mockup-body .number {
       font-family: monospace;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       letter-spacing: 0.2em;
-      color: #E2E8F0;
+      color: #F0FDF4;
     }
 
     .card-mockup-footer {
@@ -1333,36 +1286,35 @@
 
     .card-mockup-footer .holder-title {
       font-size: 0.65rem;
-      color: #94A3B8;
+      color: #A7F3D0;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
 
     .card-mockup-footer .holder-name {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 700;
-      color: var(--text-white);
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
     }
 
     .card-mockup-footer .valid {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
-      color: #34D399;
+      color: #FCD34D;
     }
 
     /* ============================================================
        ESPAÇO CLÍNICO & EXAME DE VISTA
        ============================================================ */
     .clinic-section {
-      padding: 6rem 0;
-      position: relative;
+      padding: 5.5rem 0;
+      background: #F8FAFC;
     }
 
     .clinic-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 3.5rem;
       align-items: center;
     }
 
@@ -1373,7 +1325,7 @@
     .clinic-img-wrapper {
       border-radius: var(--radius-xl);
       overflow: hidden;
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--border-card);
       box-shadow: var(--shadow-lg);
       position: relative;
     }
@@ -1386,70 +1338,70 @@
 
     .clinic-badge-float {
       position: absolute;
-      bottom: 24px;
-      right: 24px;
-      background: rgba(14, 23, 38, 0.92);
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(0, 210, 211, 0.35);
+      bottom: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
-      padding: 1rem 1.4rem;
+      padding: 0.85rem 1.25rem;
       box-shadow: var(--shadow-md);
       display: flex;
       align-items: center;
-      gap: 0.85rem;
+      gap: 0.75rem;
     }
 
     .clinic-badge-float .icon {
-      color: var(--accent-cyan);
+      color: var(--accent-blue);
     }
 
     .clinic-badge-float strong {
       display: block;
-      color: var(--text-white);
-      font-size: 0.95rem;
+      color: var(--text-heading);
+      font-size: 0.9rem;
     }
 
     .clinic-badge-float span {
       color: var(--text-muted);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
     }
 
     .clinic-content h2 {
       font-family: var(--font-heading);
-      font-size: clamp(2rem, 3.8vw, 2.75rem);
-      line-height: 1.2;
-      color: var(--text-white);
-      margin-top: 0.8rem;
-      margin-bottom: 1.2rem;
+      font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+      line-height: 1.22;
+      color: var(--text-heading);
+      margin-top: 0.65rem;
+      margin-bottom: 1rem;
     }
 
     .clinic-content p {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 2rem;
+      color: var(--text-body);
+      font-size: 1.02rem;
+      line-height: 1.65;
+      margin-bottom: 1.75rem;
     }
 
     .clinic-checklist {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      margin-bottom: 2.5rem;
+      gap: 0.85rem;
+      margin-bottom: 2.25rem;
     }
 
     .clinic-check-item {
       display: flex;
       align-items: flex-start;
-      gap: 0.85rem;
+      gap: 0.75rem;
     }
 
     .clinic-check-item .check-icon {
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
-      background: rgba(0, 210, 211, 0.15);
-      color: var(--accent-cyan);
+      background: var(--bg-optic-soft);
+      color: var(--accent-blue);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1459,90 +1411,89 @@
 
     .clinic-check-item strong {
       display: block;
-      color: var(--text-white);
-      font-size: 1rem;
-      margin-bottom: 0.15rem;
+      color: var(--text-heading);
+      font-size: 0.95rem;
+      margin-bottom: 0.1rem;
     }
 
     .clinic-check-item span {
       color: var(--text-muted);
-      font-size: 0.88rem;
+      font-size: 0.85rem;
     }
 
     /* ============================================================
-       DEPOIMENTOS & PROVA SOCIAL (Google Reviews)
+       DEPOIMENTOS & PROVA SOCIAL
        ============================================================ */
     .reviews-section {
-      padding: 6rem 0;
-      background: linear-gradient(180deg, #070D17 0%, #09111E 100%);
+      padding: 5.5rem 0;
+      background: #FFFFFF;
       border-top: 1px solid var(--border-subtle);
     }
 
     .reviews-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.75rem;
     }
 
     .review-card {
-      background: var(--bg-card);
+      background: var(--bg-main);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg);
-      padding: 2.2rem;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      position: relative;
-      transition: all 0.3s ease;
+      transition: all 0.25s ease;
     }
 
     .review-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-md);
+      border-color: #CBD5E1;
     }
 
     .review-stars {
       display: flex;
-      gap: 0.25rem;
+      gap: 0.2rem;
       color: var(--gold-star);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
 
     .review-text {
-      color: #CBD5E1;
-      font-size: 1rem;
-      line-height: 1.65;
+      color: var(--text-body);
+      font-size: 0.96rem;
+      line-height: 1.6;
       font-style: italic;
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.5rem;
     }
 
     .reviewer-profile {
       display: flex;
       align-items: center;
-      gap: 0.95rem;
-      padding-top: 1.25rem;
+      gap: 0.85rem;
+      padding-top: 1.15rem;
       border-top: 1px solid var(--border-subtle);
     }
 
     .reviewer-avatar {
-      width: 46px;
-      height: 46px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid var(--accent-cyan);
+      border: 2px solid var(--accent-blue);
     }
 
     .reviewer-name {
-      color: var(--text-white);
-      font-size: 0.96rem;
+      color: var(--text-heading);
+      font-size: 0.92rem;
       font-weight: 700;
       display: block;
     }
 
     .reviewer-tag {
-      color: var(--accent-cyan);
-      font-size: 0.78rem;
+      color: var(--accent-blue);
+      font-size: 0.76rem;
       font-weight: 600;
     }
 
@@ -1550,13 +1501,13 @@
        LOCALIZAÇÃO E ATENDIMENTO NO MÉIER
        ============================================================ */
     .location-section {
-      padding: 6rem 0;
-      position: relative;
+      padding: 5.5rem 0;
+      background: #F8FAFC;
     }
 
     .location-card-container {
-      background: var(--bg-card);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #FFFFFF;
+      border: 1px solid var(--border-card);
       border-radius: var(--radius-xl);
       overflow: hidden;
       display: grid;
@@ -1565,7 +1516,7 @@
     }
 
     .location-info-pane {
-      padding: 3.5rem;
+      padding: 3.25rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1573,39 +1524,39 @@
 
     .location-info-pane h3 {
       font-family: var(--font-heading);
-      font-size: 2.2rem;
-      color: var(--text-white);
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: var(--text-heading);
+      margin-top: 0.4rem;
+      margin-bottom: 0.85rem;
     }
 
     .location-info-pane p {
-      color: var(--text-muted);
-      font-size: 1rem;
+      color: var(--text-body);
+      font-size: 0.96rem;
       line-height: 1.6;
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
     }
 
     .location-data-list {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      margin-bottom: 2.5rem;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
     }
 
     .loc-data-item {
       display: flex;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 0.85rem;
     }
 
     .loc-icon-circle {
-      width: 44px;
-      height: 44px;
+      width: 40px;
+      height: 40px;
       border-radius: var(--radius-sm);
-      background: rgba(0, 210, 211, 0.1);
-      border: 1px solid rgba(0, 210, 211, 0.3);
-      color: var(--accent-cyan);
+      background: var(--bg-optic-soft);
+      border: 1px solid var(--bg-optic-border);
+      color: var(--accent-blue);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1614,91 +1565,89 @@
 
     .loc-text-col strong {
       display: block;
-      color: var(--text-white);
-      font-size: 0.95rem;
+      color: var(--text-heading);
+      font-size: 0.92rem;
       font-weight: 700;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.15rem;
     }
 
     .loc-text-col span {
       color: var(--text-muted);
-      font-size: 0.88rem;
+      font-size: 0.84rem;
     }
 
     .location-map-pane {
-      min-height: 450px;
-      background: #0B1320;
+      min-height: 420px;
+      background: #F1F5F9;
     }
 
     .location-map-pane iframe {
       width: 100%;
       height: 100%;
       border: 0;
-      filter: invert(90%) hue-rotate(180deg) contrast(1.1);
     }
 
     /* ============================================================
-       RODAPÉ PREMIUM
+       RODAPÉ CLEAN & ELEGANTE
        ============================================================ */
     .site-footer {
-      background: #03060B;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 5rem 0 2rem;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-subtle);
+      padding: 4.5rem 0 2rem;
       color: var(--text-muted);
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-      gap: 3rem;
-      margin-bottom: 4rem;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 2.5rem;
+      margin-bottom: 3.5rem;
     }
 
     .footer-brand-col p {
-      font-size: 0.92rem;
-      line-height: 1.65;
-      margin: 1.25rem 0 1.5rem;
-      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin: 1rem 0 1.25rem;
+      color: var(--text-body);
     }
 
     .footer-col-title {
       font-family: var(--font-heading);
-      color: var(--text-white);
-      font-size: 1.05rem;
+      color: var(--text-heading);
+      font-size: 0.98rem;
       font-weight: 700;
-      margin-bottom: 1.35rem;
-      letter-spacing: 0.02em;
+      margin-bottom: 1.15rem;
     }
 
     .footer-links-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
+      gap: 0.65rem;
     }
 
     .footer-links-list a {
-      color: var(--text-muted);
-      font-size: 0.9rem;
+      color: var(--text-body);
+      font-size: 0.88rem;
       transition: color 0.2s, transform 0.2s;
       display: inline-block;
     }
 
     .footer-links-list a:hover {
-      color: var(--accent-cyan);
-      transform: translateX(4px);
+      color: var(--accent-blue);
+      transform: translateX(3px);
     }
 
     .footer-bottom {
-      padding-top: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--border-subtle);
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
-      font-size: 0.82rem;
-      color: var(--text-dim);
+      font-size: 0.8rem;
+      color: var(--text-light);
     }
 
     /* ============================================================
@@ -1706,40 +1655,26 @@
        ============================================================ */
     .floating-whatsapp {
       position: fixed;
-      bottom: 28px;
-      right: 28px;
+      bottom: 24px;
+      right: 24px;
       z-index: 99;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.65rem;
     }
 
     .floating-whatsapp-btn {
-      width: 60px;
-      height: 60px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
       color: #FFFFFF;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
       position: relative;
-      transition: transform 0.25s ease;
-    }
-
-    .floating-whatsapp-btn::after {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      border: 2px solid rgba(37, 211, 102, 0.6);
-      animation: pulseGreen 2s infinite;
-    }
-
-    @keyframes pulseGreen {
-      0% { transform: scale(1); opacity: 1; }
-      100% { transform: scale(1.35); opacity: 0; }
+      transition: transform 0.2s ease;
     }
 
     .floating-whatsapp-btn:hover {
@@ -1747,13 +1682,11 @@
     }
 
     .whatsapp-tooltip {
-      background: rgba(14, 23, 38, 0.95);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: var(--text-white);
-      font-size: 0.84rem;
+      background: #0F172A;
+      color: #FFFFFF;
+      font-size: 0.82rem;
       font-weight: 600;
-      padding: 0.5rem 0.95rem;
+      padding: 0.45rem 0.85rem;
       border-radius: var(--radius-pill);
       box-shadow: var(--shadow-sm);
       white-space: nowrap;
@@ -1764,8 +1697,8 @@
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(4, 7, 13, 0.85);
-      backdrop-filter: blur(10px);
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(8px);
       z-index: 1000;
       display: flex;
       align-items: center;
@@ -1773,7 +1706,7 @@
       padding: 1.5rem;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.25s ease;
     }
 
     .modal-backdrop.open {
@@ -1782,16 +1715,16 @@
     }
 
     .modal-card {
-      background: var(--bg-card);
-      border: 1px solid rgba(0, 210, 211, 0.35);
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
       border-radius: var(--radius-xl);
-      max-width: 520px;
+      max-width: 480px;
       width: 100%;
-      padding: 2.5rem;
+      padding: 2.25rem;
       position: relative;
-      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7), 0 0 40px var(--accent-cyan-glow);
-      transform: translateY(20px);
-      transition: transform 0.3s ease;
+      box-shadow: 0 25px 60px rgba(15, 23, 42, 0.2);
+      transform: translateY(15px);
+      transition: transform 0.25s ease;
     }
 
     .modal-backdrop.open .modal-card {
@@ -1800,91 +1733,90 @@
 
     .modal-close-btn {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 18px;
+      right: 18px;
       background: transparent;
       border: none;
       color: var(--text-muted);
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 1;
-      padding: 0.4rem;
       cursor: pointer;
     }
 
     .modal-close-btn:hover {
-      color: var(--text-white);
+      color: var(--text-heading);
     }
 
     .modal-card h3 {
       font-family: var(--font-heading);
-      font-size: 1.75rem;
-      color: var(--text-white);
-      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+      color: var(--text-heading);
+      margin-bottom: 0.35rem;
     }
 
     .modal-card p {
       color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 1.75rem;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
     }
 
     .form-group {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.15rem;
     }
 
     .form-group label {
       display: block;
-      color: var(--text-white);
-      font-size: 0.86rem;
+      color: var(--text-heading);
+      font-size: 0.84rem;
       font-weight: 600;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
     .form-group input, .form-group select {
       width: 100%;
-      padding: 0.85rem 1.15rem;
+      padding: 0.75rem 1rem;
       border-radius: var(--radius-md);
-      background: #080E18;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      color: var(--text-white);
-      font-size: 0.95rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-heading);
+      font-size: 0.92rem;
       font-family: inherit;
     }
 
     .form-group input:focus, .form-group select:focus {
       outline: none;
-      border-color: var(--accent-cyan);
-      box-shadow: 0 0 15px var(--accent-cyan-glow);
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
     }
 
     .btn-submit-modal {
       width: 100%;
-      padding: 1rem;
+      padding: 0.9rem;
       border-radius: var(--radius-pill);
-      background: linear-gradient(135deg, var(--brand-red) 0%, #B91C1C 100%);
-      color: var(--text-white);
-      font-size: 1.05rem;
+      background: var(--brand-red);
+      color: #FFFFFF;
+      font-size: 1rem;
       font-weight: 700;
-      margin-top: 0.75rem;
+      margin-top: 0.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
-      box-shadow: 0 6px 20px var(--brand-red-glow);
+      gap: 0.45rem;
+      box-shadow: 0 4px 14px rgba(224, 53, 43, 0.25);
     }
 
     .btn-submit-modal:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(224, 53, 43, 0.6);
+      background: var(--brand-red-hover);
+      transform: translateY(-1px);
     }
 
     /* ============================================================
-       RESPONSIVIDADE (360px a 1024px)
+       RESPONSIVIDADE
        ============================================================ */
     @media (max-width: 1024px) {
       .hero-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2.75rem;
       }
       .hero-content {
         max-width: 100%;
@@ -1897,11 +1829,11 @@
       }
       .cartao-banner {
         grid-template-columns: 1fr;
-        padding: 2.5rem;
+        padding: 2.25rem;
       }
       .clinic-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2.75rem;
       }
     }
 
@@ -1916,11 +1848,11 @@
         display: block;
       }
       .hero-section {
-        padding: 3rem 0 4rem;
+        padding: 2.75rem 0 3.5rem;
       }
       .hero-features-bar {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 0.85rem;
       }
       .hero-cta-group {
         flex-direction: column;
@@ -1931,17 +1863,17 @@
       }
       .float-badge-card {
         position: static;
-        margin-top: 1rem;
+        margin-top: 0.75rem;
       }
       .lens-viewport {
-        height: 340px;
+        height: 320px;
       }
       .simulator-container {
-        padding: 1.5rem;
+        padding: 1.25rem;
       }
       .footer-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.75rem;
       }
       .whatsapp-tooltip {
         display: none;
@@ -1958,24 +1890,23 @@
   <div class="topbar">
     <div class="container topbar-content">
       <div class="topbar-left">
-        <span class="topbar-badge">Unidade Méier Aberta · Laboratório Óptico Ativo</span>
+        <span class="topbar-badge">Unidade Méier Aberta</span>
         <span>Rua Dias da Cruz, 499 - Loja A (Méier, RJ)</span>
       </div>
       <div class="topbar-right">
         <a href="https://wa.me/5521978663838?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20%C3%93tica%20Vis%C3%A3o%20de%20Todos%20M%C3%A9ier" target="_blank" rel="noopener" class="topbar-link">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           (21) 97866-3838
         </a>
-        <span class="badge-cartao">Convênio Oficial Cartão de TODOS</span>
+        <span class="badge-cartao" style="background: rgba(16, 185, 129, 0.15); color: #047857; border-color: #34D399;">Convênio Cartão de TODOS</span>
       </div>
     </div>
   </div>
 
-  <!-- SITE HEADER -->
+  <!-- SITE HEADER CLEAN & ELEGANTE -->
   <header class="site-header">
     <div class="nav-container">
       <a href="#" class="brand-logo-wrap">
-        <!-- Logotipo Oficial da Marca Visão de Todos -->
         <img src="https://visaodetodos.com.br/wp-content/themes/visao-de-todos-theme/images/logotipo.svg" alt="Ótica Visão de Todos" class="brand-logo-img">
         <div class="brand-city-tag">
           <span class="branch">Méier</span>
@@ -1985,107 +1916,106 @@
 
       <nav>
         <ul class="nav-links">
-          <li><a href="#simulador">Simulador de Lentes</a></li>
-          <li><a href="#armacoes">Armações &amp; Marcas</a></li>
-          <li><a href="#tecnologias">Tratamentos Digitais</a></li>
-          <li><a href="#cartao-de-todos">Cartão de TODOS</a></li>
-          <li><a href="#exame">Exame de Vista</a></li>
-          <li><a href="#localizacao">Como Chegar</a></li>
+          <li><a href="#simulador">Simulador</a></li>
+          <li><a href="#armacoes">Armações</a></li>
+          <li><a href="#tecnologias">Lentes</a></li>
+          <li><a href="#cartao-de-todos">Convênio</a></li>
+          <li><a href="#exame">Exame</a></li>
+          <li><a href="#localizacao">Loja</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <button class="btn-header-cta" onclick="openAppointmentModal()">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
           Agendar Exame
         </button>
         <button class="mobile-menu-toggle" onclick="toggleMobileNav()" aria-label="Abrir Menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION COM ESTÉTICA DE VISÃO CLARA -->
   <section class="hero-section">
-    <div class="hero-glow-cyan"></div>
-    <div class="hero-glow-red"></div>
+    <div class="hero-glow-soft"></div>
 
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-tags">
           <span class="badge-optic">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             Ótica Referência no Méier
           </span>
           <span class="badge-cartao">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
             Parceira Cartão de TODOS
           </span>
         </div>
 
         <h1 class="hero-title">
-          A Nitidez Perfeita e o Estilo que os Seus Olhos Merecem.
-          <span class="text-gradient">Sem Pagar a Mais por Isso.</span>
+          Sua visão com nitidez perfeita, <span class="text-highlight">conforto e estilo.</span>
         </h1>
 
         <p class="hero-desc">
-          Armações exclusivas das melhores grifes mundiais e nacionais, lentes digitais de laboratório próprio com proteção contra luz de telas e exame de vista computadorizado na Rua Dias da Cruz, 499.
+          Lentes digitais de alta precisão, armações modernas das principais marcas e exame computadorizado para você enxergar a vida com total clareza na Rua Dias da Cruz, 499.
         </p>
 
         <div class="hero-cta-group">
           <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20exame%20de%20vista%20ou%20conferir%20arma%C3%A7%C3%B5es%20na%20unidade%20M%C3%A9ier" target="_blank" rel="noopener" class="btn-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            Falar com Óptico no WhatsApp
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            Falar no WhatsApp
           </a>
           <a href="#simulador" class="btn-secondary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path></svg>
-            Simular Tratamento de Lentes
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path></svg>
+            Simulador de Lentes
           </a>
         </div>
 
         <div class="hero-features-bar">
           <div class="hero-feat-item">
             <div class="feat-icon-box">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             </div>
             <div class="feat-text-box">
-              <strong>Pronto com Agilidade</strong>
-              <span>Montagem rápida em laboratório</span>
+              <strong>Montagem Rápida</strong>
+              <span>Laboratório ágil</span>
             </div>
           </div>
 
           <div class="hero-feat-item">
             <div class="feat-icon-box">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
             </div>
             <div class="feat-text-box">
               <strong>4.9 Estrelas</strong>
-              <span>Avaliações reais no Méier</span>
+              <span>Avaliações reais Méier</span>
             </div>
           </div>
 
           <div class="hero-feat-item">
             <div class="feat-icon-box">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
             </div>
             <div class="feat-text-box">
-              <strong>10x Sem Juros</strong>
-              <span>Condição especial filiados</span>
+              <strong>Até 10x sem Juros</strong>
+              <span>Preços acessíveis</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- HERO VISUAL COM CARDS DINÂMICOS -->
+      <!-- HERO VISUAL COM ÍCONES CONTEXTUAIS CORRIGIDOS -->
       <div class="hero-visual-card">
+        <!-- Card Flutuante 1: Filtro Blue Defense com Ícone de Óculos/Proteção Digital -->
         <div class="float-badge-card top-right">
-          <div class="float-icon cyan">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          <div class="float-icon blue">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="14" r="4"></circle><circle cx="18" cy="14" r="4"></circle><path d="M10 14h4"></path><path d="M6 10l2-6"></path><path d="M18 10l-2-6"></path></svg>
           </div>
           <div class="float-text">
-            <strong>Proteção Blue Defense 99.8%</strong>
-            <span>Zero cansaço visual em telas</span>
+            <strong>Proteção Blue Defense</strong>
+            <span>Elimina o cansaço visual em telas</span>
           </div>
         </div>
 
@@ -2095,13 +2025,14 @@
           </div>
         </div>
 
+        <!-- Card Flutuante 2: Garantia com Ícone de Escudo/Precisão Optométrica -->
         <div class="float-badge-card bottom-left">
           <div class="float-icon green">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
           </div>
           <div class="float-text">
             <strong>Garantia de Adaptação</strong>
-            <span>100% de precisão visual</span>
+            <span>100% de conforto para o seu grau</span>
           </div>
         </div>
       </div>
@@ -2111,7 +2042,7 @@
   <!-- VITRINE DE MARCAS PARCEIRAS (MARQUEE) -->
   <section class="brands-section">
     <div class="container">
-      <div class="brands-title">Marcas e Grifes Disponíveis no Méier</div>
+      <div class="brands-title">Marcas e Grifes Disponíveis na Loja</div>
     </div>
     <div class="marquee-track">
       <div class="marquee-brand-item">
@@ -2138,7 +2069,7 @@
         <img src="https://visaodetodos.com.br/wp-content/uploads/2024/03/bee.png" alt="Bee">
         <span class="marquee-brand-name">BEE KIDS</span>
       </div>
-      <!-- Repetição para loop contínuo e suave -->
+      <!-- Repetição contínua -->
       <div class="marquee-brand-item">
         <img src="https://visaodetodos.com.br/wp-content/uploads/2024/03/rayban.png" alt="Ray-Ban">
         <span class="marquee-brand-name">RAY-BAN</span>
@@ -2170,9 +2101,9 @@
   <section class="simulator-section" id="simulador">
     <div class="container">
       <div class="section-header">
-        <span class="badge-optic">Experiência Óptica Interativa</span>
+        <span class="badge-optic">Experiência Interativa</span>
         <h2>Veja a Diferença Real Entre uma <span class="highlight">Lente Comum</span> e uma <span class="highlight">Lente Digital</span></h2>
-        <p>Alterne entre os modos abaixo e experimente em tempo real como o tratamento Antirreflexo Multicamadas e o Filtro Blue Defense eliminam o cansaço e o ofuscamento.</p>
+        <p>Alterne entre os modos abaixo e perceba como o tratamento Antirreflexo e o Filtro Blue Defense trazem nitidez límpida e eliminam reflexos incômodos.</p>
       </div>
 
       <div class="simulator-container">
@@ -2185,27 +2116,22 @@
 
           <div class="sim-toggle-tabs">
             <button class="sim-btn-mode active" id="btnModeDirty" onclick="setLensMode('dirty')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
               Lente Convencional
             </button>
             <button class="sim-btn-mode" id="btnModeClean" onclick="setLensMode('clean')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
               Lente Digital com Antirreflexo
             </button>
           </div>
         </div>
 
         <div class="lens-viewport" id="lensViewport">
-          <!-- Imagem base de cena cotidiana com luzes e contraste -->
           <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Visão através dos óculos" class="lens-stage-image">
           
-          <!-- Camada de reflexos ofuscantes (Lente Comum) -->
           <div class="lens-layer-dirty" id="layerDirty"></div>
-
-          <!-- Camada de tratamento límpido (Lente Digital) -->
           <div class="lens-layer-clean" id="layerClean"></div>
 
-          <!-- Badge flutuante explicativo dentro do visor -->
           <div class="lens-overlay-badge">
             <span class="badge-status bad" id="lensBadgeStatus">● Sem Proteção Antirreflexo</span>
             <h4 id="lensBadgeTitle">Ofuscamento e Fadiga Visual</h4>
@@ -2216,15 +2142,15 @@
         <div class="sim-features-row">
           <div class="sim-feat-box">
             <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
             </div>
             <h5>99% de Transparência</h5>
-            <p>Mais luz chega aos seus olhos sem reflexos brancos em chamadas de vídeo ou fotos.</p>
+            <p>Mais luz chega aos seus olhos sem reflexos brancos em fotos ou chamadas de vídeo.</p>
           </div>
 
           <div class="sim-feat-box">
             <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
             </div>
             <h5>Filtro de Luz Azul Nociva</h5>
             <p>Bloqueia a radiação de smartphones e telas de computador, regulando o ciclo do sono.</p>
@@ -2232,84 +2158,11 @@
 
           <div class="sim-feat-box">
             <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
-            <h5>Camada Hidrofóbica &amp; Antirrisco</h5>
-            <p>Repele poeira, gotículas de água e marcas de dedos, garantindo limpeza sem esforço.</p>
+            <h5>Fácil Limpeza &amp; Antirrisco</h5>
+            <p>Repele poeira, gotículas de água e marcas de dedos, garantindo lentes limpas por mais tempo.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRATAMENTOS E TECNOLOGIAS DIGITAIS -->
-  <section class="tech-section" id="tecnologias">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge-optic">Engenharia Óptica</span>
-        <h2>Tecnologias de Ponta com <span class="highlight">Garantia de Adaptação</span></h2>
-        <p>No Méier, trabalhamos com as resinas e tratamentos mais avançados do mercado para oferecer lentes leves, finas e confortáveis para qualquer grau.</p>
-      </div>
-
-      <div class="tech-grid">
-        <div class="tech-card">
-          <div>
-            <div class="tech-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-            </div>
-            <h3>Multifocais Digitais Free-Form</h3>
-            <p>Campos visuais até 40% mais amplos para perto, intermediário e longe, eliminando as zonas de aberração lateral comuns em multifocais tradicionais.</p>
-          </div>
-          <ul class="tech-pill-list">
-            <li>Adaptação Imediata</li>
-            <li>Transição Suave</li>
-            <li>Conforto de Leitura</li>
-          </ul>
-        </div>
-
-        <div class="tech-card">
-          <div>
-            <div class="tech-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-            </div>
-            <h3>Filtro Blue Defense (Luz Azul)</h3>
-            <p>Tratamento incorporado à massa da lente que bloqueia especificamente os comprimentos de onda de 415 a 455nm emitidos por celulares, tablets e computadores.</p>
-          </div>
-          <ul class="tech-pill-list">
-            <li>Reduz Olho Seco</li>
-            <li>Zero Cefaleia</li>
-            <li>Melhora o Sono</li>
-          </ul>
-        </div>
-
-        <div class="tech-card">
-          <div>
-            <div class="tech-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line></svg>
-            </div>
-            <h3>Fotossensíveis Inteligentes</h3>
-            <p>Lentes translúcidas em ambientes fechados que escurecem em segundos sob a luz do sol, ajustando dinamicamente o conforto luminoso em qualquer clima.</p>
-          </div>
-          <ul class="tech-pill-list">
-            <li>Proteção UV400</li>
-            <li>Ativação Ultrarrápida</li>
-            <li>2 em 1: Grau + Solar</li>
-          </ul>
-        </div>
-
-        <div class="tech-card">
-          <div>
-            <div class="tech-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-            </div>
-            <h3>Alto Índice de Refração (Ultra Finas)</h3>
-            <p>Lentes de espessura reduzida para miopias, hipermetropias e astigmatismos moderados a altos (1.67 e 1.74), eliminando o aspecto de "fundo de garrafa".</p>
-          </div>
-          <ul class="tech-pill-list">
-            <li>Bordas Finíssimas</li>
-            <li>Super Leves</li>
-            <li>Estética Elegante</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -2319,9 +2172,9 @@
   <section class="catalog-section" id="armacoes">
     <div class="container">
       <div class="section-header">
-        <span class="badge-optic">Coleções 2026</span>
+        <span class="badge-optic">Coleções em Alta</span>
         <h2>Armações Selecionadas com <span class="highlight">Design &amp; Durabilidade</span></h2>
-        <p>Descubra modelos masculinos, femininos, infantis e unissex pensados para o formato do seu rosto e o seu estilo diário.</p>
+        <p>Modelos masculinos, femininos e infantis com ajuste anatômico e materiais nobres para o seu dia a dia.</p>
       </div>
 
       <div class="catalog-filter-bar">
@@ -2342,7 +2195,7 @@
           <div class="product-content">
             <span class="product-brand">Ray-Ban Eyewear</span>
             <h3 class="product-title">Aviator Legend Dourado com Verde G-15</h3>
-            <p class="product-desc">Design icônico mundial em metal nobre anticorrosivo, com lentes de cristal polarizadas e proteção UV integral.</p>
+            <p class="product-desc">Design icônico mundial em metal nobre anticorrosivo com proteção UV integral.</p>
             <div class="product-footer">
               <div class="price-box">
                 <span class="from">A partir de</span>
@@ -2350,7 +2203,6 @@
                 <span class="parcel">ou com desconto no PIX</span>
               </div>
               <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Tenho%20interesse%20no%20modelo%20Ray-Ban%20Aviator%20visto%20no%20site" target="_blank" rel="noopener" class="btn-product-wpp">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Provar
               </a>
             </div>
@@ -2365,8 +2217,8 @@
           </div>
           <div class="product-content">
             <span class="product-brand">Sabrina Sato Eyewear</span>
-            <h3 class="product-title">Cat-Eye Sofisticado em Acetato Italiano</h3>
-            <p class="product-desc">Armação anatômica em acetato marmorizado que valoriza os traços faciais femininos com máxima leveza e elegância.</p>
+            <h3 class="product-title">Cat-Eye Sofisticado em Acetato Nobre</h3>
+            <p class="product-desc">Armação anatômica em acetato marmorizado que valoriza o rosto com elegância.</p>
             <div class="product-footer">
               <div class="price-box">
                 <span class="from">A partir de</span>
@@ -2374,7 +2226,6 @@
                 <span class="parcel">Cartão de TODOS aceito</span>
               </div>
               <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Tenho%20interesse%20na%20arma%C3%A7%C3%A3o%20Sabrina%20Sato%20Cat-Eye%20do%20site" target="_blank" rel="noopener" class="btn-product-wpp">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Provar
               </a>
             </div>
@@ -2390,7 +2241,7 @@
           <div class="product-content">
             <span class="product-brand">Dtrack Precision</span>
             <h3 class="product-title">Nobre Minimal Retangular Grafite</h3>
-            <p class="product-desc">Estrutura em liga metálica com memória de forma e plaquetas de silicone hipoalergênico. Quase imperceptível no rosto.</p>
+            <p class="product-desc">Estrutura em liga metálica com memória de forma e plaquetas macias de silicone.</p>
             <div class="product-footer">
               <div class="price-box">
                 <span class="from">A partir de</span>
@@ -2398,7 +2249,6 @@
                 <span class="parcel">Ideal p/ Multifocal</span>
               </div>
               <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Tenho%20interesse%20na%20arma%C3%A7%C3%A3o%20Dtrack%20do%20site" target="_blank" rel="noopener" class="btn-product-wpp">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Provar
               </a>
             </div>
@@ -2408,13 +2258,13 @@
         <!-- PRODUTO 4: Marca Rio Redondo Urbano -->
         <div class="product-card" data-category="grau">
           <div class="product-image-box">
-            <span class="product-tag">Urbano &amp; Moderno</span>
+            <span class="product-tag">Urbano</span>
             <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=700&q=80" alt="Óculos Marca Rio Redondo">
           </div>
           <div class="product-content">
             <span class="product-brand">Marca Rio Eyewear</span>
-            <h3 class="product-title">Round Vintage Preto Fosco com Hastes Douradas</h3>
-            <p class="product-desc">O queridinho dos profissionais e criativos no Rio. Aro fino geométrico compatível com lentes blue defense.</p>
+            <h3 class="product-title">Round Vintage Preto Fosco com Dourado</h3>
+            <p class="product-desc">O queridinho dos profissionais e criativos no Rio. Perfeito para lentes Blue Defense.</p>
             <div class="product-footer">
               <div class="price-box">
                 <span class="from">A partir de</span>
@@ -2422,7 +2272,6 @@
                 <span class="parcel">Preço Acessível</span>
               </div>
               <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Gostei%20do%20modelo%20Marca%20Rio%20Round%20no%20site" target="_blank" rel="noopener" class="btn-product-wpp">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Provar
               </a>
             </div>
@@ -2437,8 +2286,8 @@
           </div>
           <div class="product-content">
             <span class="product-brand">Bee Kids Eyewear</span>
-            <h3 class="product-title">Flex Armor Anti-Impacto com Elástico Suave</h3>
-            <p class="product-desc">Desenvolvida em polímero emborrachado flexível sem parafusos de metal. Resistente a quedas e segura para a rotina escolar.</p>
+            <h3 class="product-title">Flex Armor Anti-Impacto Infantil</h3>
+            <p class="product-desc">Polímero emborrachado flexível sem parafusos de metal. Resistente a quedas.</p>
             <div class="product-footer">
               <div class="price-box">
                 <span class="from">A partir de</span>
@@ -2446,7 +2295,6 @@
                 <span class="parcel">Alta Durabilidade</span>
               </div>
               <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20linha%20infantil%20Bee%20Kids" target="_blank" rel="noopener" class="btn-product-wpp">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Provar
               </a>
             </div>
@@ -2461,16 +2309,15 @@
           </div>
           <div class="product-content">
             <span class="product-brand">Vew Eyewear</span>
-            <h3 class="product-title">Square Bold Preto Fosco com Lentes Escuras</h3>
-            <p class="product-desc">Proteção solar de máxima categoria contra raios UVA e UVB. Lentes polarizadas que cortam os reflexos no asfalto e na água.</p>
+            <h3 class="product-title">Square Bold Preto Fosco Polarizado</h3>
+            <p class="product-desc">Proteção solar máxima com filtro polarizado que elimina reflexos no asfalto e na praia.</p>
             <div class="product-footer">
               <div class="price-box">
                 <span class="from">A partir de</span>
                 <span class="val">10x R$ 32,90</span>
-                <span class="parcel">Estilo &amp; Proteção</span>
+                <span class="parcel">Proteção UV Total</span>
               </div>
               <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Gostei%20do%20solar%20Vew%20Square%20do%20site" target="_blank" rel="noopener" class="btn-product-wpp">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Provar
               </a>
             </div>
@@ -2480,38 +2327,106 @@
     </div>
   </section>
 
-  <!-- BANNER PARCERIA OFICIAL CARTÃO DE TODOS -->
+  <!-- TRATAMENTOS E TECNOLOGIAS DIGITAIS -->
+  <section class="tech-section" id="tecnologias">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-optic">Tecnologia de Lentes</span>
+        <h2>Tratamentos Digitais com <span class="highlight">Garantia de Adaptação</span></h2>
+        <p>No Méier, trabalhamos com resinas de alta tecnologia para oferecer lentes leves, finas e confortáveis para o seu grau.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div>
+            <div class="tech-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </div>
+            <h3>Multifocais Digitais</h3>
+            <p>Campos visuais até 40% mais amplos para perto, intermediário e longe, com transição suave e rápida adaptação.</p>
+          </div>
+          <ul class="tech-pill-list">
+            <li>Adaptação Fácil</li>
+            <li>Conforto de Leitura</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <div>
+            <div class="tech-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </div>
+            <h3>Filtro Blue Defense</h3>
+            <p>Bloqueia a luz azul nociva de computadores e smartphones, prevenindo a fadiga ocular e dores de cabeça.</p>
+          </div>
+          <ul class="tech-pill-list">
+            <li>Reduz Olho Seco</li>
+            <li>Melhora o Sono</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <div>
+            <div class="tech-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line></svg>
+            </div>
+            <h3>Fotossensíveis</h3>
+            <p>Lentes translúcidas em ambientes fechados que escurecem em segundos no sol, ajustando a luz dinamicamente.</p>
+          </div>
+          <ul class="tech-pill-list">
+            <li>Proteção UV400</li>
+            <li>Grau + Solar em 1</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <div>
+            <div class="tech-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3>Lentes Ultra Finas</h3>
+            <p>Alto índice de refração para graus moderados e altos, eliminando o aspecto pesado de bordas grossas.</p>
+          </div>
+          <ul class="tech-pill-list">
+            <li>Bordas Finas</li>
+            <li>Super Leves</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER PARCERIA CARTÃO DE TODOS -->
   <section class="cartao-todos-section" id="cartao-de-todos">
     <div class="container">
       <div class="cartao-banner">
         <div class="cartao-content">
-          <span class="badge-cartao">Parceria Oficial de Saúde Visual</span>
-          <h3>É Filiado ao <span>Cartão de TODOS</span>? Seus Benefícios no Méier São Imediatos!</h3>
+          <span class="badge-cartao">Convênio Oficial Méier</span>
+          <h3>É Filiado ao <span>Cartão de TODOS</span>? Seus Benefícios São Imediatos!</h3>
           <p>
-            Garantimos acesso à saúde visual de qualidade para você e toda a sua família. Apresente seu cartão físico ou no app e aproveite condições exclusivas na confecção das suas lentes e armações.
+            Apresente seu cartão físico ou no app e aproveite condições exclusivas na confecção de lentes e escolha de armações para toda a família.
           </p>
 
           <ul class="cartao-benefits-list">
             <li class="cartao-benefit-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <span>Descontos especiais em lentes de grau</span>
             </li>
             <li class="cartao-benefit-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Armações selecionadas a preços sociais</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Armações a preços acessíveis</span>
             </li>
             <li class="cartao-benefit-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Parcelamento em até 10x no cartão</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Parcelamento em até 10x sem juros</span>
             </li>
             <li class="cartao-benefit-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Atendimento prioritário na loja do Méier</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Atendimento prioritário na loja</span>
             </li>
           </ul>
 
           <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20Sou%20filiado%20ao%20Cart%C3%A3o%20de%20TODOS%20e%20gostaria%20de%20saber%20meus%20benef%C3%ADcios%20no%20M%C3%A9ier" target="_blank" rel="noopener" class="btn-cartao">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
             Consultar Meus Benefícios de Filiado
           </a>
         </div>
@@ -2519,7 +2434,7 @@
         <div class="cartao-card-mockup">
           <div class="card-mockup-header">
             <div class="chip"></div>
-            <span class="badge-cartao" style="background: rgba(255,255,255,0.1); color: #FFF; border-color: rgba(255,255,255,0.2);">CONVÊNIO OFICIAL</span>
+            <span style="font-size: 0.72rem; font-weight: 700; background: rgba(255,255,255,0.2); padding: 0.2rem 0.6rem; border-radius: 999px;">CONVÊNIO OFICIAL</span>
           </div>
           <div class="card-mockup-body">
             <div class="number">•••• •••• •••• 4990</div>
@@ -2542,63 +2457,63 @@
       <div class="clinic-grid">
         <div class="clinic-visual-box">
           <div class="clinic-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=80" alt="Exame de vista computadorizado na Ótica Visão de Todos Méier">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=80" alt="Exame de vista computadorizado">
           </div>
           <div class="clinic-badge-float">
             <div class="icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
             </div>
             <div>
               <strong>Exame Rápido &amp; Confortável</strong>
-              <span>Resultados imediatos e precisos</span>
+              <span>Resultados precisos na hora</span>
             </div>
           </div>
         </div>
 
         <div class="clinic-content">
-          <span class="badge-optic">Saúde Preventiva</span>
+          <span class="badge-optic">Cuidado Preventivo</span>
           <h2>Exame de Vista no Méier com <span class="highlight">Precisão Digital</span></h2>
           <p>
-            Não espere a dor de cabeça ou o cansaço visual atrapalharem sua produtividade ou seus estudos. Agende seu atendimento na Ótica Visão de Todos Méier com equipamentos modernos de auto-refração que identificam a graduação exata que seus olhos precisam.
+            Não deixe o cansaço visual ou a dor de cabeça atrapalharem sua rotina. Agende seu atendimento com equipamentos modernos de auto-refração na Dias da Cruz.
           </p>
 
           <ul class="clinic-checklist">
             <li class="clinic-check-item">
               <div class="check-icon">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </div>
               <div>
-                <strong>Medição Digital com Auto-Refrator</strong>
-                <span>Mapeamento milimétrico do erro refrativo (miopia, astigmatismo, presbiopia).</span>
+                <strong>Auto-Refração Computadorizada</strong>
+                <span>Mapeamento exato do seu grau (miopia, astigmatismo, vista cansada).</span>
               </div>
             </li>
             <li class="clinic-check-item">
               <div class="check-icon">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </div>
               <div>
-                <strong>Aferição da Distância Pupilar Computadorizada</strong>
-                <span>Centralização exata do foco da lente para evitar sensação de tontura.</span>
+                <strong>Aferição Pupilar Digital</strong>
+                <span>Centralização precisa do foco da lente para conforto total.</span>
               </div>
             </li>
             <li class="clinic-check-item">
               <div class="check-icon">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </div>
               <div>
-                <strong>Orientação Técnica Especializada</strong>
-                <span>Nossa equipe te ajuda a escolher a armação que melhor acomoda seu grau.</span>
+                <strong>Orientação Especializada</strong>
+                <span>Apoio completo para escolher a armação ideal ao seu grau.</span>
               </div>
             </li>
           </ul>
 
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
             <button class="btn-primary" onclick="openAppointmentModal()">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-              Agendar Horário no Méier
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Agendar Horário
             </button>
             <a href="https://wa.me/5521978663838?text=Ol%C3%A1!%20J%C3%A1%20tenho%20receita%20m%C3%A9dica%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20lentes" target="_blank" rel="noopener" class="btn-secondary">
-              Já Tenho Receita (Enviar Foto)
+              Já Tenho Receita
             </a>
           </div>
         </div>
@@ -2606,26 +2521,26 @@
     </div>
   </section>
 
-  <!-- DEPOIMENTOS DE CLIENTES DO MÉIER -->
+  <!-- DEPOIMENTOS -->
   <section class="reviews-section" id="depoimentos">
     <div class="container">
       <div class="section-header">
-        <span class="badge-optic">Satisfação Comprovada</span>
-        <h2>O Que Dizem os Nossos <span class="highlight">Clientes do Méier</span></h2>
-        <p>A confiança da comunidade do Méier é o nosso maior orgulho. Veja relatos espontâneos de quem renovou o olhar conosco.</p>
+        <span class="badge-optic">Avaliações Reais</span>
+        <h2>O Que Dizem Nossos <span class="highlight">Clientes do Méier</span></h2>
+        <p>A satisfação de quem renovou a visão conosco na Rua Dias da Cruz.</p>
       </div>
 
       <div class="reviews-grid">
         <div class="review-card">
           <div class="review-stars">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           </div>
           <p class="review-text">
-            "Fui super bem atendida na Dias da Cruz! Estava com muita dificuldade para me adaptar ao multifocal de outra ótica, mas a equipe daqui fez um ajuste milimétrico e a lente ficou perfeita. Recomendo de olhos fechados!"
+            "Fui super bem atendida na Dias da Cruz! Estava com muita dificuldade para me adaptar ao multifocal de outra ótica, mas a equipe daqui fez um ajuste milimétrico e a lente ficou perfeita."
           </p>
           <div class="reviewer-profile">
             <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Cliente Márcia Helena" class="reviewer-avatar">
@@ -2638,40 +2553,40 @@
 
         <div class="review-card">
           <div class="review-stars">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           </div>
           <p class="review-text">
-            "Aproveitei o desconto do Cartão de TODOS e fiz meus óculos e os do meu filho. O atendimento foi impecável, tiraram todas as dúvidas com paciência e entregaram as lentes super rápido. Nota 10!"
+            "Aproveitei o desconto do Cartão de TODOS e fiz meus óculos e os do meu filho. O atendimento foi impecável, tiraram todas as dúvidas e entregaram super rápido."
           </p>
           <div class="reviewer-profile">
             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Cliente Carlos Eduardo" class="reviewer-avatar">
             <div>
               <span class="reviewer-name">Carlos Eduardo Matos</span>
-              <span class="reviewer-tag">Filiado Cartão de TODOS · Cliente Verificado</span>
+              <span class="reviewer-tag">Filiado Cartão de TODOS</span>
             </div>
           </div>
         </div>
 
         <div class="review-card">
           <div class="review-stars">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
           </div>
           <p class="review-text">
-            "Trabalho 8 horas na frente do computador e sentia muita dor de cabeça no fim do dia. Comprei uma armação linda da Sabrina Sato com filtro de luz azul e a diferença na primeira semana foi inacreditável!"
+            "Trabalho no computador e sentia muita dor nos olhos. Comprei uma armação Sabrina Sato com filtro Blue Defense e a diferença no meu dia a dia foi enorme!"
           </p>
           <div class="reviewer-profile">
             <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Cliente Juliana Bastos" class="reviewer-avatar">
             <div>
               <span class="reviewer-name">Juliana Bastos</span>
-              <span class="reviewer-tag">Design Gráfica · Lentes Blue Defense</span>
+              <span class="reviewer-tag">Lentes Blue Defense</span>
             </div>
           </div>
         </div>
@@ -2679,21 +2594,21 @@
     </div>
   </section>
 
-  <!-- LOCALIZAÇÃO E CONTATOS MÉIER -->
+  <!-- LOCALIZAÇÃO E ATENDIMENTO NO MÉIER -->
   <section class="location-section" id="localizacao">
     <div class="container">
       <div class="location-card-container">
         <div class="location-info-pane">
-          <span class="badge-optic">Venha nos Visitar</span>
+          <span class="badge-optic">Venha nos Conhecer</span>
           <h3>Fácil Acesso no Coração do Méier</h3>
           <p>
-            Localizada no polo comercial mais vibrante da Zona Norte carioca, com atendimento acolhedor, ambiente climatizado e estacionamentos próximos.
+            Localização privilegiada na principal rua comercial da Zona Norte, com ambiente climatizado e atendimento acolhedor.
           </p>
 
           <div class="location-data-list">
             <div class="loc-data-item">
               <div class="loc-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               </div>
               <div class="loc-text-col">
                 <strong>Endereço da Loja</strong>
@@ -2704,7 +2619,7 @@
 
             <div class="loc-data-item">
               <div class="loc-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               </div>
               <div class="loc-text-col">
                 <strong>Horário de Atendimento</strong>
@@ -2715,24 +2630,23 @@
 
             <div class="loc-data-item">
               <div class="loc-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               </div>
               <div class="loc-text-col">
-                <strong>Telefone &amp; WhatsApp</strong>
+                <strong>WhatsApp &amp; Telefone</strong>
                 <span>(21) 97866-3838</span>
-                <span>Atendimento ágil para orçamentos e dúvidas</span>
+                <span>Atendimento rápido para dúvidas e orçamentos</span>
               </div>
             </div>
           </div>
 
           <a href="https://maps.google.com/?q=Rua+Dias+da+Cruz,+499,+Méier,+Rio+de+Janeiro" target="_blank" rel="noopener" class="btn-primary" style="align-self: flex-start;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-            Traçar Rota no Google Maps
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+            Como Chegar (Google Maps)
           </a>
         </div>
 
         <div class="location-map-pane">
-          <!-- Embed Google Maps com localização exata da Rua Dias da Cruz 499 -->
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2974245648177!2d-43.28421882379051!3d-22.90239103837837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997ddc3bb6249b%3A0xe54dcf9c34f24c30!2sR.%20Dias%20da%20Cruz%2C%20499%20-%20M%C3%A9ier%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020720-010!5e0!3m2!1spt-BR!2sbr!4v1710500000000!5m2!1spt-BR!2sbr" 
             allowfullscreen="" 
@@ -2745,51 +2659,51 @@
     </div>
   </section>
 
-  <!-- FOOTER PREMIUM -->
+  <!-- RODAPÉ CLEAN -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand-col">
-        <img src="https://visaodetodos.com.br/wp-content/themes/visao-de-todos-theme/images/logotipo.svg" alt="Ótica Visão de Todos" style="height: 40px; margin-bottom: 0.5rem;">
+        <img src="https://visaodetodos.com.br/wp-content/themes/visao-de-todos-theme/images/logotipo.svg" alt="Ótica Visão de Todos" style="height: 36px; margin-bottom: 0.5rem;">
         <p>
-          Saúde visual, tecnologia óptica e sofisticação ao alcance de todos. Unidade Méier dedicada a transformar a forma como você enxerga o mundo.
+          Saúde visual, tecnologia óptica e elegância acessível no coração do Méier.
         </p>
-        <div style="display: flex; gap: 0.75rem;">
+        <div style="display: flex; gap: 0.5rem;">
           <span class="badge-optic" style="font-size: 0.72rem;">CNPJ Ativo</span>
           <span class="badge-cartao" style="font-size: 0.72rem;">Cartão de TODOS</span>
         </div>
       </div>
 
       <div>
-        <h4 class="footer-col-title">Navegação Rápida</h4>
+        <h4 class="footer-col-title">Navegação</h4>
         <ul class="footer-links-list">
-          <li><a href="#simulador">Simulador de Lentes</a></li>
-          <li><a href="#armacoes">Catálogo de Armações</a></li>
-          <li><a href="#tecnologias">Tratamentos Digitais</a></li>
-          <li><a href="#cartao-de-todos">Convênio Cartão de TODOS</a></li>
-          <li><a href="#exame">Agendamento de Exame</a></li>
+          <li><a href="#simulador">Simulador</a></li>
+          <li><a href="#armacoes">Armações</a></li>
+          <li><a href="#tecnologias">Lentes</a></li>
+          <li><a href="#cartao-de-todos">Convênio</a></li>
+          <li><a href="#exame">Exame</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-col-title">Tecnologias Ópticas</h4>
+        <h4 class="footer-col-title">Lentes &amp; Cuidados</h4>
         <ul class="footer-links-list">
-          <li><a href="#tecnologias">Lentes Multifocais Free-Form</a></li>
-          <li><a href="#tecnologias">Filtro de Luz Azul (Blue Defense)</a></li>
-          <li><a href="#tecnologias">Tratamento Antirreflexo</a></li>
+          <li><a href="#tecnologias">Multifocais Digitais</a></li>
+          <li><a href="#tecnologias">Filtro Blue Defense</a></li>
+          <li><a href="#tecnologias">Antirreflexo Premium</a></li>
           <li><a href="#tecnologias">Lentes Fotossensíveis</a></li>
-          <li><a href="#tecnologias">Alto Índice Ultra Finas</a></li>
+          <li><a href="#tecnologias">Ultra Finas</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="footer-col-title">Unidade Méier</h4>
-        <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem;">
+        <p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 0.85rem;">
           Rua Dias da Cruz, 499 - Loja A<br>
           Méier · Rio de Janeiro - RJ<br>
           CEP: 20720-010
         </p>
-        <a href="https://wa.me/5521978663838?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20%C3%93tica%20Vis%C3%A3o%20de%20Todos%20M%C3%A9ier" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 700; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.4rem;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <a href="https://wa.me/5521978663838?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20%C3%93tica%20Vis%C3%A3o%20de%20Todos%20M%C3%A9ier" target="_blank" rel="noopener" style="color: var(--accent-blue); font-weight: 700; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           (21) 97866-3838
         </a>
       </div>
@@ -2800,16 +2714,16 @@
         &copy; 2026 Ótica Visão de Todos Méier. Todos os direitos reservados.
       </div>
       <div>
-        Desenvolvido com Alta Performance &amp; Precisão Visual.
+        Saúde Visual &amp; Alta Precisão.
       </div>
     </div>
   </footer>
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
   <div class="floating-whatsapp">
-    <span class="whatsapp-tooltip">Tire dúvidas no WhatsApp Méier</span>
+    <span class="whatsapp-tooltip">Atendimento no Méier</span>
     <a href="https://wa.me/5521978663838?text=Ol%C3%A1%2C%20estou%20no%20site%20e%20gostaria%20de%20falar%20com%20um%20especialista%20da%20unidade%20M%C3%A9ier" target="_blank" rel="noopener" class="floating-whatsapp-btn" aria-label="Falar no WhatsApp">
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     </a>
   </div>
 
@@ -2817,9 +2731,9 @@
   <div class="modal-backdrop" id="appointmentModal">
     <div class="modal-card">
       <button class="modal-close-btn" onclick="closeAppointmentModal()">&times;</button>
-      <span class="badge-optic" style="margin-bottom: 0.5rem;">Agendamento Prioritário</span>
+      <span class="badge-optic" style="margin-bottom: 0.4rem;">Agendamento Prioritário</span>
       <h3>Exame de Vista no Méier</h3>
-      <p>Preencha os campos abaixo para reservar seu horário diretamente no WhatsApp da unidade.</p>
+      <p>Preencha os campos abaixo para reservar seu horário diretamente no WhatsApp da loja.</p>
 
       <form id="appointmentForm" onsubmit="handleAppointmentSubmit(event)">
         <div class="form-group">
@@ -2846,7 +2760,7 @@
         </div>
 
         <button type="submit" class="btn-submit-modal">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
           Confirmar no WhatsApp da Loja
         </button>
       </form>
@@ -2952,9 +2866,10 @@
         links.style.top = '100%';
         links.style.left = '0';
         links.style.right = '0';
-        links.style.background = 'rgba(7, 13, 23, 0.98)';
+        links.style.background = '#FFFFFF';
         links.style.padding = '1.5rem';
-        links.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+        links.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+        links.style.borderBottom = '1px solid #E2E8F0';
       }
     }
   </script>
